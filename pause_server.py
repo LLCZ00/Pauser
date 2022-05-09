@@ -1,4 +1,4 @@
-#arduino pauser server
+# Pauser Server
 from pynput.keyboard import Key, Controller
 import socket
 
