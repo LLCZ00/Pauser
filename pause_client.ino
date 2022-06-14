@@ -22,10 +22,10 @@ int forward = 8;
 int pause = 7;
 int back = 6;
 
-IPAddress ip(192, 168, 1, 29); //ip to connect tos
-unsigned int port = 9516; //port to connect to
+IPAddress ip(192, 168, 1, 29); // Destination IP
+unsigned int port = 9516; // Destination Port
 
-unsigned int localPort = 2390;
+unsigned int localPort = 2390; // Local port (unused, but it's required)
 WiFiUDP Udp;
 
 void setup() {
@@ -51,7 +51,7 @@ void setup() {
     delay(8000);
   }
   Serial.println("Connected to wifi");
-  digitalWrite(LED_BUILTIN, HIGH); //lights when wifi is connected
+  digitalWrite(LED_BUILTIN, HIGH); // Activates Arduino built-in LED upon successful wifi connection
   Udp.begin(localPort);
 }
 
